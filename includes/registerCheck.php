@@ -52,18 +52,6 @@ if($err === 0){ // check state of flag
 
 }
 
-
-
-
-
-
-
-
-
-
-
 } // end of server post check - last of the ifs!!
-
-
 
 ?>
