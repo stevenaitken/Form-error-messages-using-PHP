@@ -1,0 +1,12 @@
+THe PHP form posts back to itself which you can see within the for action on register.php - form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>".
+Register.php loads registerCheck.php from the includes folder. This file passed variable values back to register.php.
+
+If you look under each form element you will see <span class="error"> * <?php echo $nameErr;?></span> or similar. This is how a message is displayed if form errors occur.
+
+If you look at registerCheck.php you can see where these errors are generated.
+
+
+Since the page is posting back to itself, we check if $_SERVER["REQUEST_METHOD"] === "POST") has occurred. Only then will the  PHP code be carried out. Nothing will happen unless the submit button has been posted.
+
+The error messages can be presented using HTML and CSS.
+
